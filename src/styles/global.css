@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #E9E7E9;
+  --card-color: #F4F1F2;
+  --stroke-color-primary: #DFDCDF;
+  --stroke-color-secondary: #CECACD;
+  --text-color-primary: #4A4448;
+  --text-color-secondary: #756C71;
+  --button-color: #332B31;
+  --check-bg: #45b4421f;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --ff-sans: 'Oxygen', system-ui, sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.5rem;
+
+  --heading-font-sm: var(--fw-bold) var(--fs-xs)/1.4 var(--ff-sans);
+  --heading-font-lg: var(--fw-bold) var(--fs-lg)/1.4 var(--ff-sans);
+  --heading-font-xl: var(--fw-bold) var(--fs-lg)/1.4 var(--ff-sans);
+
+  --body-font-xs: var(--fw-regular) var(--fs-xs)/1.4 var(--ff-sans);
+  --body-font-sm: var(--fw-regular) var(--fs-sm)/1.4 var(--ff-sans);
+  --body-font-md: var(--fw-regular) var(--fs-md)/1.4 var(--ff-sans);
+
+  --py-sm: 0.5rem;
+  --py-md: 1rem;
+  --py-lg: 1.75rem;
+  --py-xl: 2rem;
+
+  --px-sm: 0.5rem;
+  --px-md: 1rem;
+  --px-lg: 1.5rem;
+  --px-xl: 2rem;
+
+  --my-md: 1rem;
+  --my-lg: 2rem;
+  --my-xl: 4rem;
+
+  --gap-md: 1rem;
+  --gap-lg: 1.5rem;
+}
