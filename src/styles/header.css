@@ -1,0 +1,30 @@
+header {
+  --gap: var(--gap-xl);
+  --margin-block: var(--my-xl);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: var(--gap);
+
+  margin-block: var(--margin-block);
+}
+
+header nav {
+  width: 100%;
+  max-width: 25rem;
+}
+
+header img {
+  width: 116px;
+}
+
+@media (width <= 425px) {
+  header {
+    --gap: var(--gap-md);
+    --margin-block: var(--my-lg);
+
+    margin-bottom: 1.25rem;
+  }
+}

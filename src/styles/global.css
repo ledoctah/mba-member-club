@@ -5,6 +5,7 @@
 }
 
 :root {
+  --brand-color: #D658B3;
   --bg-color: #E9E7E9;
   --card-color: #F4F1F2;
   --stroke-color-primary: #DFDCDF;
@@ -38,7 +39,8 @@
   --py-lg: 1.75rem;
   --py-xl: 2rem;
 
-  --px-sm: 0.5rem;
+  --px-xs: 0.5rem;
+  --px-sm: 0.75rem;
   --px-md: 1rem;
   --px-lg: 1.5rem;
   --px-xl: 2rem;
@@ -49,4 +51,20 @@
 
   --gap-md: 1rem;
   --gap-lg: 1.5rem;
+  --gap-xl: 2rem;
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+
+  padding-inline: var(--px-sm);
 }

@@ -1,0 +1,66 @@
+label.input {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: var(--stroke-color-primary);
+  color: var(--button-color);
+
+  padding: var(--py-sm) var(--px-xs) var(--py-sm) var(--py-md);
+
+  border: 1.5px solid var(--stroke-color-secondary);
+  border-radius: 12px;
+
+  width: 100%;
+
+  cursor: text;
+
+  transition: border-color 300ms;
+}
+
+label.input input {
+  all: unset;
+
+  font: var(--body-font-md);
+}
+
+label.input input::placeholder {
+  color: var(--text-color-secondary);
+}
+
+label.input button {
+  all: unset;
+
+  display: flex;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: var(--button-color);
+
+  mix-blend-mode: normal;
+  opacity: 0.6;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition: opacity 300ms, background-color 300ms;
+}
+
+label.input button:hover {
+  background-color: var(--text-color-primary);
+}
+
+label.input:has(input:not(:placeholder-shown)) button {
+  opacity: 1;
+}
+
+label.input img {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+label.input:focus-within {
+  border-color: var(--brand-color);
+}
