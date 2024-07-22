@@ -158,6 +158,63 @@ main {
 
 .history {
   grid-area: b;
+
+  & header {
+    display: flex;
+    justify-content: space-between;
+
+    & h2 {
+      font: var(--heading-font-xs);
+      color: var(--text-color-secondary);
+
+      text-transform: uppercase;
+    }
+
+    & p {
+      font: var(--body-font-xs);
+      color: var(--text-color-secondary);
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--gap-md);
+
+    margin-top: var(--my-md);
+
+    border-top: 1px solid var(--bg-color);
+
+    padding-top: var(--py-md);
+
+    & li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      list-style-type: none;
+
+      & div {
+        & h3 {
+          font: var(--heading-font-xs);
+          color: var(--text-color-primary);
+        }
+
+        & p {
+          font: var(--body-font-xs);
+          color: var(--text-color-secondary);
+        }
+      }
+
+      & img {
+        background-color: var(--check-bg);
+
+        padding: 0.25rem;
+        border-radius: 50%;
+      }
+    }
+  }
 }
 
 .next-reward {
