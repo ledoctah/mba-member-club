@@ -14,6 +14,7 @@
   --text-color-secondary: #756C71;
   --button-color: #332B31;
   --check-bg: #45b4421f;
+  --gradient-primary: linear-gradient(90deg, #2DAA6E, #2DAAAA, #856CCF, #D658B3);
 
   --fw-regular: 400;
   --fw-bold: 700;
