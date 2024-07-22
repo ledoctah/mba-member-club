@@ -219,4 +219,85 @@ main {
 
 .next-reward {
   grid-area: d;
+
+  padding-block: var(--py-xl);
+  padding-inline: var(--px-xl);
+
+  display: flex;
+
+  gap: var(--gap-xl);
+
+  & div {
+    width: 100%;
+
+    & h3 {
+      font: var(--heading-font-xl);
+      color: var(--text-color-primary);
+
+      & span {
+        font: var(--body-font-md);
+        color: var(--text-color-secondary);
+      }
+    }
+
+    & div {
+      display: flex;
+
+      gap: 0.75rem;
+
+      justify-content: space-between;
+      align-items: center;
+
+      margin-top: 0.75rem;
+
+      & hr {
+        --hr-height: 0.5rem;
+
+        all: unset;
+
+        display: inline-block;
+
+        width: 100%;
+        height: var(--hr-height);
+
+        border-radius: 999px;
+
+        background-color: var(--stroke-color-primary);
+
+        &::after {
+          content: '';
+
+          top: 0;
+          left: 0;
+
+          display: block;
+
+          height: var(--hr-height);
+          width: 70%;
+
+          border-radius: 999px;
+
+          background-image: var(--gradient-primary);
+        }
+      }
+
+      & span {
+        text-wrap: nowrap;
+
+        font: var(--body-font-xs);
+        color: var(--text-color-secondary);
+      }
+    }
+  }
+
+  & img {
+    width: 4.5rem;
+    aspect-ratio: 1/1;
+
+    background-color: var(--bg-color);
+
+    border-radius: 50%;
+
+    padding: 1rem;
+  }
 }

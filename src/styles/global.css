@@ -30,7 +30,7 @@
   --heading-font-xs: var(--fw-bold) var(--fs-xs)/1.4 var(--ff-sans);
   --heading-font-sm: var(--fw-bold) var(--fs-sm)/1.4 var(--ff-sans);
   --heading-font-lg: var(--fw-bold) var(--fs-lg)/1.4 var(--ff-sans);
-  --heading-font-xl: var(--fw-bold) var(--fs-lg)/1.4 var(--ff-sans);
+  --heading-font-xl: var(--fw-bold) var(--fs-xl)/1.4 var(--ff-sans);
 
   --body-font-xs: var(--fw-regular) var(--fs-xs)/1.4 var(--ff-sans);
   --body-font-sm: var(--fw-regular) var(--fs-sm)/1.4 var(--ff-sans);
