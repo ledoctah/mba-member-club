@@ -1,4 +1,4 @@
-header {
+#header {
   --gap: var(--gap-xl);
   --margin-block: var(--my-xl);
 
@@ -11,17 +11,17 @@ header {
   margin-block: var(--margin-block);
 }
 
-header nav {
+#header nav {
   width: 100%;
   max-width: 25rem;
 }
 
-header img {
+#header img {
   width: 116px;
 }
 
 @media (width <= 425px) {
-  header {
+  #header {
     --gap: var(--gap-md);
     --margin-block: var(--my-lg);
 
