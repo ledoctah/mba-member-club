@@ -1,8 +1,12 @@
-main {
+main.container {
   display: grid;
+
+  position: relative;
 
   row-gap: var(--gap-md);
   column-gap: var(--gap-lg);
+
+  margin-bottom: var(--my-xl);
 
   grid-template-areas: "a c c c"
                        "b c c c"
@@ -158,6 +162,12 @@ main {
 
 .history {
   grid-area: b;
+
+  position: absolute;
+  overflow-y: scroll;
+
+  width: 100%;
+  height: 100%;
 
   & header {
     display: flex;
