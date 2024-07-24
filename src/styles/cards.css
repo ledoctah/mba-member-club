@@ -98,6 +98,8 @@ main.container {
     display: flex;
     justify-content: space-between;
 
+    gap: var(--gap-md);
+
     & h2 {
       font: var(--heading-font-xs);
       color: var(--text-color-secondary);
@@ -119,6 +121,8 @@ main.container {
 
       border-radius: 999px;
 
+      text-wrap: nowrap;
+
       background-color: var(--stroke-color-primary);
 
       font: var(--heading-font-sm);
@@ -130,7 +134,7 @@ main.container {
   }
 
   & ul {
-    --img-size: 4rem;
+    --img-size: 45%;
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -309,5 +313,58 @@ main.container {
     border-radius: 50%;
 
     padding: 1rem;
+  }
+}
+
+@media(max-width: 900px) {
+  :root {
+    --px-xl: 1.25rem;
+    --py-2xl: 1.5rem;
+  }
+
+  main.container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .history {
+    position: initial;
+  }
+
+  .card-info {
+    padding-inline: var(--px-xl);
+    padding-block: var(--py-2xl);
+
+    & header {
+      & p {
+        font: var(--body-font-xs);
+      }
+
+      & .tag {
+        font: var(--heading-font-xs);
+      }
+    }
+
+    & ul {
+      --img-size: 50%;
+
+      & li {
+        border-radius: 20%;
+      }
+    }
+  }
+
+  .next-reward {
+    & div {
+      width: 100%;
+
+      & h3 {
+        font: var( --heading-font-lg);
+
+        & span {
+          font: var(--body-font-sm);
+        }
+      }
+    }
   }
 }
