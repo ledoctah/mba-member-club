@@ -265,6 +265,7 @@ main.container {
       margin-top: 0.75rem;
 
       & hr {
+        --reward-percentage: 100%;
         --hr-height: 0.5rem;
 
         all: unset;
@@ -287,7 +288,7 @@ main.container {
           display: block;
 
           height: var(--hr-height);
-          width: 70%;
+          width: var(--reward-percentage);
 
           border-radius: 999px;
 
