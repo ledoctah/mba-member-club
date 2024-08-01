@@ -1,6 +1,6 @@
-import { AppError } from '../errors/AppError';
+import { AppError } from '../../errors/AppError';
 
-import { fetchClient } from '../services/fetchClient';
+import { fetchClient } from '../../services/fetchClient';
 
 const main = document.querySelector('main.container');
 const dialog = document.querySelector('dialog');
