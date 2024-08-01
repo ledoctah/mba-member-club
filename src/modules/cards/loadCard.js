@@ -3,6 +3,7 @@ import { AppError } from '../errors/AppError';
 import { fetchClient } from '../services/fetchClient';
 
 const main = document.querySelector('main.container');
+const dialog = document.querySelector('dialog');
 
 function buildUserInfo({ imageUrl, name, clientSince }) {
   const aside = document.createElement('aside');
@@ -179,6 +180,12 @@ export async function loadCard({ clientId }) {
       nextRewardContainer,
       historyContainer,
     );
+
+    const { loyaltyCard } = client;
+
+    if (loyaltyCard.totalCuts === loyaltyCard.cutsNeeded) {
+      dialog.showModal();
+    }
   } catch (e) {
     if (e instanceof AppError && e.status === 404) {
       // eslint-disable-next-line no-alert

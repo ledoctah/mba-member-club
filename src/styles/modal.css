@@ -1,0 +1,52 @@
+dialog {
+  position: fixed;
+
+  top: 0;
+
+  min-width: 100vw;
+  min-height: 100vh;
+
+  border: none;
+
+  background-color: #00000055;
+
+  align-items: center;
+  justify-content: center;
+
+  &[open] {
+    display: flex;
+  }
+
+  & section {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.825rem;
+
+    background: var(--card-color);
+
+    border-radius: 16px;
+
+    padding-inline: var(--px-lg);
+    padding-block: var(--py-lg);
+
+    & h1 {
+      font: var(--heading-font-xl);
+    }
+
+    & p {
+      font: var(--body-font-md);
+    }
+
+    & button {
+      all: unset;
+
+      position: absolute;
+      top: 8px;
+      right: 8px;
+    }
+  }
+}
