@@ -12,10 +12,16 @@
 ## 🔎 About the project
 Welcome to the Member Club project! This project was created as part of the Javascript fundamentals module final test in the MBA program by Rocketseat + Sirius Education. The website showcases a loyality card for a hairdresser saloon.
 
-## ⚙️ Technologies Used
+## ⚙️ Technologies and Tools Used
 - HTML5
 - CSS3
 - Javascript
+- Babel
+- Webpack
+- JSON Server
+- ESLint
+- Prettier
+- EditorConfig
 
 ## 📋 Installation
 To get a copy of the project on your local computer, just follow these steps:
